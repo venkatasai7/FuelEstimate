@@ -48,14 +48,14 @@ export default function Mileage(props) {
 
   return (
     <div>
-        <b>Mileage Estimate: </b>
+        <b>Vehicle Mileage : </b>
         <input className="mx-1 my-1"  value={Mileage} onChange={HandleOnChange}/> 
         <select value={MileageUnits} name="MileageUnits" id="MileageUnits" onChange={HandleOnChangeMileageUnits}>
             <option value="1">Kilometers/Litre</option>
             <option value="2">Miles/Gallon</option>
         </select>
         <br/>
-        <b>Petrol Cost:</b>
+        <b>Petrol Cost per {(MileageUnits===1)? "Liter" : "Galon" }</b>
         <input className="mx-2 my-1" value={Cost} onChange={HandleOnChangeCost}/> 
         <select value={MileageUnits} name="CurrencyType" id="MileageUnits" onChange={HandleOnChangeMileageUnits}>
             <option value="1">INR</option>
