@@ -46,7 +46,7 @@ const App = () => {
   return (
     <>
      <NavBar/>
-    <div className='container-fluid' style={{flex : '',background:"#EEEEEE",height:'100vh', width:'100%'}}>  
+    <div className='container-fluid' style={{height:'100vh', width:'100%'}}>  
    
       <div style={{padding:"1%"}}>
       <SourceDestinationForm onSubmit={handleSubmit} />
